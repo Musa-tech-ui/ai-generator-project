@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
 </head>
@@ -12,7 +13,7 @@
     <div class="content">
     <h1> AI fantasy Poem Generator</h1>
 
-    <form>
+    <form id="poem-generator-form">
         <input type="text" placeholder="Enter your request" 
         autofocus 
         required 
@@ -21,6 +22,11 @@
 
         <input type="submit" class="submit-button" />
     </form>
+    <div id="poem" class="poem">
+        Enchanting smile, anyone would be under your spell 
+        <br />
+        Oh , beauty of a magazine.
+    </div>
 
     <footer>
         This AI project was coded by
@@ -28,8 +34,8 @@
         is open-sourced on
         <a href="https://github.com/Musa-tech-ui/ai-generator-project.git" target="_blank">
             GitHub</a>
-        and is
-        <a href="https://ai-generator-project.onrender.com" target="_blank">hosted on Render</a>.
+        and is hosted on
+        <a href="https://ai-generator-project.onrender.com" target="_blank">Render</a>.
         </div>
     </footer>
 
