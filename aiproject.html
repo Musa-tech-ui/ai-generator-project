@@ -5,28 +5,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
 </head>
 
 <body>
     <div class="content">
-    <h1> AI fantasy Poem Generator</h1>
+    <h1> AI fantasy Poem </h1>
 
+    <div class="form-container">
     <form id="poem-generator-form">
         <input type="text" placeholder="Enter your request" 
         autofocus 
         required 
         autocomplete="off" 
-        class="command"/>
+        class="command"
+        id="user-command"
+        />
 
         <input type="submit" class="submit-button" />
     </form>
-    <div id="poem" class="poem">
-        Enchanting smile, anyone would be under your spell 
-        <br />
-        Oh , beauty of a magazine.
+    <div class="hint>i.e:Flower,city or food"></div>
     </div>
+    <div id="poem" class="poem hidden"></div>
+        
 
     <footer>
         This AI project was coded by
